@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SecondActivity">
 
     <TextView
         android:id="@+id/lbLoading"
@@ -23,14 +23,14 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_above="@+id/btnSetting"/>
+        android:layout_above="@+id/btnSetting1"/>
 
     <Button
-        android:id="@+id/btnSetting"
+        android:id="@+id/btnSetting1"
         android:layout_margin="5dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="USA"
+        android:text="KOR"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"/>

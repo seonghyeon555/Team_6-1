@@ -10,19 +10,19 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 
-import com.example.checker.databinding.ActivityMainBinding;
+import com.example.checker.databinding.ActivitySecondBinding;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity {
 
     /*
         var h = document.getElementsByClassName('top container')[0];
         document.body.innerHTML = '';
         document.body.appendChild(h);
      */
-    Button Btn1,Btn2;
+    Button Btn1,Btn2,btnSetting1;
     private String getScript =
             "(function() {" +
                     "var h = document.getElementsByClassName('top container')[0];" +
@@ -30,22 +30,22 @@ public class MainActivity extends AppCompatActivity {
                     "document.body.appendChild(h);" +
                     "})()";
 
-    private ActivityMainBinding binding;
+    private ActivitySecondBinding binding;
     private WebSettings webSettings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        binding = ActivitySecondBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
         setContentView(view);
 
-        binding.btnSetting.setOnClickListener(new View.OnClickListener() {
+        binding.btnSetting1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Uri uri = Uri.parse("http://baidu.com");
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, SecondActivity.class);
+                intent.setClass(SecondActivity.this, MainActivity.class);
                 startActivity(intent);
                 startActivity(intent);
             }
@@ -66,12 +66,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        binding.webView.loadUrl("https://coronaboard.kr/");
+        binding.webView.loadUrl("https://coronaboard.com/");
         binding.webView.setVisibility(View.INVISIBLE);
         binding.lbLoading.setVisibility(View.VISIBLE);
     }
 
 
-    private void onBtnSettingClicked(View v) {
+    private void onBtnSetting1Clicked(View v) {
     }
 }
