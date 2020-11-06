@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lbLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로딩 중"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/btnSetting"/>
+
+    <Button
+        android:id="@+id/btnSetting"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="설정"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"/>
+
+</RelativeLayout>
