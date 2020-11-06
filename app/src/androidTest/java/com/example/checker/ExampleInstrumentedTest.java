@@ -1,6 +1,4 @@
-package com.github.alphabs.covid_checker;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.checker;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,9 +6,11 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.github.alphabs.covid_checker.databinding.ActivityMainBinding;
+import com.example.checker.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+class MainActivity extends AppCompatActivity {
 
     /*
         var h = document.getElementsByClassName('top container')[0];
@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
      */
     private String getScript =
             "(function() {" +
-            "var h = document.getElementsByClassName('top container')[0];" +
-            "document.body.innerHTML = '';" +
-            "document.body.appendChild(h);" +
-            "})()";
+                    "var h = document.getElementsByClassName('top container')[0];" +
+                    "document.body.innerHTML = '';" +
+                    "document.body.appendChild(h);" +
+                    "})()";
 
     private ActivityMainBinding binding;
     private WebSettings webSettings;

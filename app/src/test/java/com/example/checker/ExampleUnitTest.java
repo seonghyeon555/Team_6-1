@@ -1,4 +1,4 @@
-package com.github.alphabs.covid_checker;
+package com.example.checker;
 
 import org.junit.Test;
 
